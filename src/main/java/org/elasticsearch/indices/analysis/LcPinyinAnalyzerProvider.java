@@ -1,10 +1,9 @@
-package org.elasticsearch.indices.analysis;
+package org.elasticsearch.index.analysis;
 
 
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;
 import org.elasticsearch.index.IndexSettings;
-import org.elasticsearch.index.analysis.AbstractIndexAnalyzerProvider;
 import org.lc.core.AnalysisSetting;
 import org.lc.lucene.LcPinyinAnalyzer;
 

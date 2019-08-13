@@ -1,6 +1,8 @@
 package org.lc.core;
 
 import org.elasticsearch.common.settings.Settings;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AnalysisSetting {
     public static final String analysisMode = "mode";
@@ -27,8 +29,11 @@ public class AnalysisSetting {
     public static int parseIndexAnalysisSettings(Settings settings) {
         int settingCode = 0;
         if(settings != null) {
-            String[] defaultSetting = new String[]{"chinese_char", "first_letter", "full_pinyin"};
-            String[] indexAnalysisSetting = settings.getAsArray(analysisMode, defaultSetting);
+            List<String> defaultSetting = new ArrayList<>();
+            defaultSetting.add("chinese_char");
+            defaultSetting.add("first_letter");
+            defaultSetting.add("full_pinyin");
+            List<String> indexAnalysisSetting = settings.getAsList(analysisMode, defaultSetting);
             for (String settingItem : indexAnalysisSetting) {
                 if ("chinese_char".equalsIgnoreCase(settingItem)) {
                     settingCode |= IndexAnalysisSetting.chinese_char;

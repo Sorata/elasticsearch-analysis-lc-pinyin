@@ -1,10 +1,9 @@
-package org.elasticsearch.indices.analysis;
+package org.elasticsearch.index.analysis;
 
 import org.apache.lucene.analysis.Tokenizer;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;
 import org.elasticsearch.index.IndexSettings;
-import org.elasticsearch.index.analysis.AbstractTokenizerFactory;
 import org.lc.core.AnalysisSetting;
 import org.lc.lucene.LcPinyinIndexTokenizer;
 import org.lc.lucene.LcPinyinSearchTokenizer;
@@ -16,7 +15,7 @@ public class LcPinyinTokenizerFactory extends AbstractTokenizerFactory {
     private Settings settings;
 
     public LcPinyinTokenizerFactory(IndexSettings indexSettings, Environment env, String name, Settings settings, String analysisMode) {
-        super(indexSettings, name, settings);
+        super(indexSettings, settings);
         this.analysisMode = analysisMode;
         this.settings = settings;
     }

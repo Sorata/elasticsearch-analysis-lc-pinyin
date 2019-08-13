@@ -4,9 +4,9 @@ import org.apache.lucene.analysis.Analyzer;
 import org.elasticsearch.index.analysis.AnalyzerProvider;
 import org.elasticsearch.index.analysis.TokenizerFactory;
 import org.elasticsearch.indices.analysis.AnalysisModule;
-import org.elasticsearch.indices.analysis.LcPinyinAnalyzerProvider;
-import org.elasticsearch.indices.analysis.LcPinyinTokenFilterFactory;
-import org.elasticsearch.indices.analysis.LcPinyinTokenizerFactory;
+import org.elasticsearch.index.analysis.LcPinyinAnalyzerProvider;
+import org.elasticsearch.index.analysis.LcPinyinTokenFilterFactory;
+import org.elasticsearch.index.analysis.LcPinyinTokenizerFactory;
 import org.elasticsearch.plugins.AnalysisPlugin;
 import org.elasticsearch.plugins.Plugin;
 

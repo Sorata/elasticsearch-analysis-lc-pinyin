@@ -1,24 +1,14 @@
 LC Pinyin Analysis for Elasticsearch
 ====================================
 
+传说中的胡乱修改版，原始作者5.3以后就没有更新了，所以，乱改一个试试看。
+
 Lc Pinyin版本
 -------------
 
 LC version | ES version
 -----------|-----------
-master | 5.3.0 -> master
-5.3.0.1 | 5.3.0
-5.2.2.1 | 5.2.2
-5.2.0.1 | 5.2.0
-5.1.2.1 | 5.1.2
-5.1.1.1 | 5.1.1
-5.0.2.1 | 5.0.2
-5.0.1.2 | 5.0.1
-5.0.1.1 | 5.0.1
-2.4.2.1 | 2.4.2
-2.2.2.1 | 2.2.2
-1.4.5.2 | 1.4.5
-1.4.5.1 | 1.4.5
+master | 7.3.0 -> master
 
 Lc Pinyin介绍
 -------------
@@ -404,6 +394,13 @@ QueryBuilder pinyinQueryBuilder =  QueryBuilders.matchPhraseQuery("name", "dzdp"
 ```
 作者:  [@陈楠][1]
 Email: 465360798@qq.com
+
+编译方法
+------
+下载源码
+用maven本地执行 mvn clean package打包
+拷贝release目录下的zip文件到es pugin目录解压
+------
 
 <完>
 

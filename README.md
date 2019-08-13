@@ -397,10 +397,11 @@ Email: 465360798@qq.com
 
 编译方法
 ------
+```bash
 下载源码
 用maven本地执行 mvn clean package打包
 拷贝release目录下的zip文件到es pugin目录解压
-------
+```
 
 <完>
 

@@ -15,7 +15,7 @@ public class LcPinyinTokenizerFactory extends AbstractTokenizerFactory {
     private Settings settings;
 
     public LcPinyinTokenizerFactory(IndexSettings indexSettings, Environment env, String name, Settings settings, String analysisMode) {
-        super(indexSettings, settings);
+        super(indexSettings, settings, name);
         this.analysisMode = analysisMode;
         this.settings = settings;
     }

@@ -8,7 +8,7 @@ Lc Pinyin版本
 
 LC version | ES version
 -----------|-----------
-master | 7.3.0 -> master
+master | 7.13.0 -> master
 
 Lc Pinyin介绍
 -------------
